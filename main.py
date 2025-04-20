@@ -62,3 +62,15 @@ from src.visualization import plot_regime_timeline
 plot_regime_timeline(merged_df)
 plot_regime_timeline(merged_df, save=True)
 
+# Analyze feature behavior per regime
+print("\n=== Regime Means ===")
+print(merged_df.groupby('regime')[feature_cols].mean())
+
+# Optional: count data points per regime
+print("\n=== Regime Counts ===")
+print(merged_df['regime'].value_counts())
+
+# STEP 1: Print regime-wise feature means
+print("\nRegime-wise Feature Averages:")
+regime_summary = merged_df.groupby('regime')[feature_cols].mean()
+print(regime_summary)
