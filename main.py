@@ -47,7 +47,16 @@ features = prepare_features_for_clustering(merged_df, feature_cols)
 labels, kmeans = apply_kmeans(features, n_clusters=4)
 
 # Save cluster labels
+# Save cluster labels
 merged_df['regime'] = labels
+
+# Save to CSV
+import os
+output_dir = "outputs/clusters"
+os.makedirs(output_dir, exist_ok=True)
+merged_df.to_csv(os.path.join(output_dir, "merged_with_regimes.csv"), index=False)
+print("✅ Clustered data saved to: outputs/clusters/merged_with_regimes.csv")
+
 
 # Evaluate clustering
 score = evaluate_clustering(features, labels)
@@ -74,3 +83,14 @@ print(merged_df['regime'].value_counts())
 print("\nRegime-wise Feature Averages:")
 regime_summary = merged_df.groupby('regime')[feature_cols].mean()
 print(regime_summary)
+
+# STEP 2: Save full merged DataFrame with regime labels
+import os
+
+output_path = r"C:\Users\vaibh\OneDrive\Documents\GitHub\regime-detection\outputs\clusters"
+os.makedirs(output_path, exist_ok=True)
+
+csv_file = os.path.join(output_path, "merged_with_regimes.csv")
+merged_df.to_csv(csv_file, index=False)
+
+print(f"✅ Regime-labeled data saved to: {csv_file}")
