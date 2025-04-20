@@ -35,3 +35,30 @@ merged_df = merge_orderbook_trades(depth_df, agg_df)
 
 # See what we've got!
 print(merged_df[['Time', 'spread', 'imbalance', 'microprice', 'volume_imbalance', 'volatility']].head(10))
+
+
+from src.clustering import prepare_features_for_clustering, apply_kmeans, evaluate_clustering
+
+# Select features to cluster on
+feature_cols = ['spread', 'imbalance', 'microprice', 'volatility', 'volume_imbalance']
+features = prepare_features_for_clustering(merged_df, feature_cols)
+
+# Apply KMeans clustering
+labels, kmeans = apply_kmeans(features, n_clusters=4)
+
+# Save cluster labels
+merged_df['regime'] = labels
+
+# Evaluate clustering
+score = evaluate_clustering(features, labels)
+print(f"Silhouette Score: {score:.4f}")
+
+# See sample with regime labels
+print(merged_df[['Time'] + feature_cols + ['regime']].head(15))
+
+
+from src.visualization import plot_regime_timeline
+
+plot_regime_timeline(merged_df)
+plot_regime_timeline(merged_df, save=True)
+
