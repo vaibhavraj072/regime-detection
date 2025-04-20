@@ -94,3 +94,9 @@ csv_file = os.path.join(output_path, "merged_with_regimes.csv")
 merged_df.to_csv(csv_file, index=False)
 
 print(f"✅ Regime-labeled data saved to: {csv_file}")
+
+# Save the final merged_df with regime labels
+import os
+os.makedirs("outputs/clusters", exist_ok=True)
+merged_df.to_csv("outputs/clusters/merged_with_regimes.csv", index=False)
+print("✅ Clustered data saved to: outputs/clusters/merged_with_regimes.csv")
