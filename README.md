@@ -10,7 +10,7 @@
 
 This project is based on a real-world task provided by a company. The objective is to analyze order book and trade data, engineer meaningful features, and apply clustering to detect **market regimes**.
 
-📄 **Task Document Provided by Company**  
+📄 **Task Document Provided by @RozReturns**  
 🔗 [View the official task description](https://docs.google.com/document/d/1SXLmYQtJEIFHq3ULb2Qejl5in0U9ZwQBFQdXD6RqpX8/edit?tab=t.0)
 
 📦 **Dataset for the Task**  
@@ -80,4 +80,5 @@ Regime timeline plot in outputs/plots/
  🙋 About the Author
 Vaibhav Raj
 A Computer Science student with a passion for quantitative analysis, trading systems, and AI.
+
 🌐[Visit my Portfolio](https://vaibhavrajportfolio.vercel.app/)
