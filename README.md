@@ -84,7 +84,8 @@ regime-detection/
    pip install -r requirements.txt
 
 2.Run the main script
-   ````python main.py````
+     
+    python main.py```
 
 
 3.Check the outputs/ folder for results:
@@ -106,4 +107,4 @@ regime-detection/
 🙋 About the Author
 - Vaibhav Raj
 A Computer Science student with a passion for quantitative analysis, trading systems, and AI.
-- [Visit my Portfolio][vaibhavrajportfolio.vercel.app]
+- [Visit my Profle](vaibhavrajportfolio.vercel.app)
