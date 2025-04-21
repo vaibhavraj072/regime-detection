@@ -86,6 +86,7 @@ regime-detection/
 2.Run the main script
      
      python main.py
+     python regime_analysis.py
 
 
 3.Check the outputs/ folder for results:
