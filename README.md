@@ -87,19 +87,19 @@ regime-detection/
    ````python main.py````
 
 
-##3.Check the outputs/ folder for results:
+##3.Check the outputs/ folder for results:##
 
-📁 Clustered CSVs: outputs/clusters/
-🖼️ Regime timeline plot: outputs/plots/
+- 📁 Clustered CSVs: outputs/clusters/
+- 🖼️ Regime timeline plot: outputs/plots/
 
-##✅ Project Milestones
+##✅ Project Milestones##
 -  Load & preprocess order book and trade data
 -  Engineer key features like spread, imbalance, and volatility
 -  Apply clustering to detect market regimes
 -  Visualize timeline of market behavior shifts
 -  Generate a full report and summaries
 
-##🙋 About the Author
-##Vaibhav Raj
+##🙋 About the Author##
+- ##Vaibhav Raj##
 A Computer Science student with a passion for quantitative analysis, trading systems, and AI.
-[Visit my Portfolio][vaibhavrajportfolio.vercel.app]
+- [Visit my Portfolio][vaibhavrajportfolio.vercel.app]
