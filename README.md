@@ -55,24 +55,24 @@ We used **KMeans clustering** to classify each timestamp into one of several mar
 
 ## 📁 Folder Structure
 
-regime-detection/
-├── data/
-│   ├── aggTrade/
-│   └── depth20_1000ms/
-├── outputs/
-│   ├── clusters/
-│   │   ├── merged_with_regimes.csv
-│   │   └── regime_summary.csv
-│   └── plots/
-│       └── regime_timeline.png
-├── src/
-│   ├── load_data.py
-│   ├── feature_engineering.py
-│   ├── clustering.py
-│   └── visualization.py
-├── main.py
-├──regime_analysis.py
-└── README.md
+- regime-detection/
+- ├── data/
+- │   ├── aggTrade/
+- │   └── depth20_1000ms/
+- ├── outputs/
+- │   ├── clusters/
+- │   │   ├── merged_with_regimes.csv
+- │   │   └── regime_summary.csv
+- │   └── plots/
+- │       └── regime_timeline.png
+- ├── src/
+- │   ├── load_data.py
+- │   ├── feature_engineering.py
+- │   ├── clustering.py
+- │   └── visualization.py
+- ├── main.py
+- ├──regime_analysis.py
+- └── README.md
 
   
 ---
