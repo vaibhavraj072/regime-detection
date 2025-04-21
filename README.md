@@ -55,7 +55,25 @@ We used **KMeans clustering** to classify each timestamp into one of several mar
 
 ## 📁 Folder Structure
 
-regime-detection/ │ ├── data/ │ ├── aggTrade/ │ └── depth20_1000ms/ │ ├── outputs/ │ ├── clusters/ │ │ ├── merged_with_regimes.csv │ │ └── regime_summary.csv │ └── plots/ │ └── regime_timeline.png │ ├── src/ │ ├── load_data.py │ ├── feature_engineering.py │ ├── clustering.py │ └── visualization.py │ ├── main.py └── README.md
+rregime-detection/
+├── data/
+│   ├── aggTrade/
+│   └── depth20_1000ms/
+├── outputs/
+│   ├── clusters/
+│   │   ├── merged_with_regimes.csv
+│   │   └── regime_summary.csv
+│   └── plots/
+│       └── regime_timeline.png
+├── src/
+│   ├── load_data.py
+│   ├── feature_engineering.py
+│   ├── clustering.py
+│   └── visualization.py
+├── main.py
+├──regime_analysis.py
+└── README.md
+
   
 ---
 
@@ -64,7 +82,9 @@ regime-detection/ │ ├── data/ │ ├── aggTrade/ │ └── dept
 1. Install Python packages:
    ```bash
    pip install -r requirements.txt
-python main.py
+  
+```bash
+   python main.py
 
 2.Check the outputs/ folder for:
 Clustered CSVs in outputs/clusters/
