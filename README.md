@@ -84,7 +84,7 @@ regime-detection/
    pip install -r requirements.txt
 
 2.Run the main script
-   ```python main.py```
+   ````python main.py````
 
 
 ##3.Check the outputs/ folder for results:
@@ -93,11 +93,11 @@ regime-detection/
 🖼️ Regime timeline plot: outputs/plots/
 
 ##✅ Project Milestones
- Load & preprocess order book and trade data
- Engineer key features like spread, imbalance, and volatility
- Apply clustering to detect market regimes
- Visualize timeline of market behavior shifts
- Generate a full report and summaries
+-  Load & preprocess order book and trade data
+-  Engineer key features like spread, imbalance, and volatility
+-  Apply clustering to detect market regimes
+-  Visualize timeline of market behavior shifts
+-  Generate a full report and summaries
 
 ##🙋 About the Author
 ##Vaibhav Raj
