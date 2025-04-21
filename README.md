@@ -55,7 +55,7 @@ We used **KMeans clustering** to classify each timestamp into one of several mar
 
 ## 📁 Folder Structure
 
-- regime-detection/
+regime-detection/
 - ├── data/
 - │   ├── aggTrade/
 - │   └── depth20_1000ms/
