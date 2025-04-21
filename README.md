@@ -85,7 +85,7 @@ regime-detection/
 
 2.Run the main script
      
-    python main.py
+     python main.py
 
 
 3.Check the outputs/ folder for results:
