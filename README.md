@@ -95,7 +95,7 @@ regime-detection/
 
 ---
 
-✅ Project Milestones
+## ✅ Project Milestones
 -  Load & preprocess order book and trade data
 -  Engineer key features like spread, imbalance, and volatility
 -  Apply clustering to detect market regimes
@@ -104,7 +104,7 @@ regime-detection/
 
 ---
 
-🙋 About the Author
+## 🙋 About the Author
 - Vaibhav Raj
-A Computer Science student with a passion for quantitative analysis, trading systems, and AI.
-- [Visit my Profle](vaibhavrajportfolio.vercel.app)
+- A Computer Science student with a passion for quantitative analysis, trading systems, and AI.
+- [Visit my Portfolio](https://vaibhavrajportfolio.vercel.app)
