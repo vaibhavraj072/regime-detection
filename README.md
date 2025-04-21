@@ -55,7 +55,7 @@ We used **KMeans clustering** to classify each timestamp into one of several mar
 
 ## 📁 Folder Structure
 
-rregime-detection/
+regime-detection/
 ├── data/
 │   ├── aggTrade/
 │   └── depth20_1000ms/
@@ -79,26 +79,27 @@ rregime-detection/
 
 ## 🛠️ How to Run the Project
 
-1. Install Python packages:
+1. **Install the required Python packages**
    ```bash
    pip install -r requirements.txt
-  
-```bash
-   python main.py
 
-2.Check the outputs/ folder for:
-Clustered CSVs in outputs/clusters/
-Regime timeline plot in outputs/plots/
+2.Run the main script
+   ```python main.py```
 
-✅ Project Milestones
+
+##3.Check the outputs/ folder for results:
+
+📁 Clustered CSVs: outputs/clusters/
+🖼️ Regime timeline plot: outputs/plots/
+
+##✅ Project Milestones
  Load & preprocess order book and trade data
- Engineer key features like spread, imbalance, volatility
+ Engineer key features like spread, imbalance, and volatility
  Apply clustering to detect market regimes
  Visualize timeline of market behavior shifts
- Generate full report & summaries
+ Generate a full report and summaries
 
- 🙋 About the Author
-Vaibhav Raj
+##🙋 About the Author
+##Vaibhav Raj
 A Computer Science student with a passion for quantitative analysis, trading systems, and AI.
-
-🌐[Visit my Portfolio](https://vaibhavrajportfolio.vercel.app/)
+[Visit my Portfolio][vaibhavrajportfolio.vercel.app]
