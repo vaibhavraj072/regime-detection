@@ -16,6 +16,6 @@ def plot_regime_timeline(df, time_col='Time', regime_col='regime', save=False):
     if save:
         os.makedirs(r"C:\Users\vaibh\OneDrive\Documents\GitHub\regime-detection\outputs\plots", exist_ok=True)
         plt.savefig(r"C:\Users\vaibh\OneDrive\Documents\GitHub\regime-detection\outputs\plots\regime_timeline.png")
-        print("✅ Regime plot saved to: outputs/plots/regime_timeline.png")
+        print("Regime plot saved to: outputs/plots/regime_timeline.png")
 
     plt.show()
