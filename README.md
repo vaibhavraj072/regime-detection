@@ -1,11 +1,4 @@
 # 🧠 Regime Detection in Market Microstructure Data
-
-## 📄 Final Report  
-**Authored by:** Vaibhav Raj  
-📘 [Click to read the final report](https://docs.google.com/document/d/1qLmr22UbpWiM6WHchLKa2RddSxvw8RUZu5mbb1eTDKk/edit?usp=sharing)
-
----
-
 ## 📝 Problem Statement
 
 This project is based on a real-world task provided by a company. The objective is to analyze order book and trade data, engineer meaningful features, and apply clustering to detect **market regimes**.
@@ -15,6 +8,13 @@ This project is based on a real-world task provided by a company. The objective 
 
 📦 **Dataset for the Task**  
 🔗 [Access the Dataset (Google Drive)](https://drive.google.com/drive/folders/1gFLwPLTE0nUN-MHoOn5u_1yrlbpI3Fst?usp=sharing)
+
+---
+
+## 📄 Final Report  
+**Authored by:** Vaibhav Raj  
+📘 [Click to read the final report](https://docs.google.com/document/d/1qLmr22UbpWiM6WHchLKa2RddSxvw8RUZu5mbb1eTDKk/edit?usp=sharing)
+
 
 ---
 
