@@ -46,10 +46,21 @@ We processed high-frequency order book (`depth20`) and trade (`aggTrade`) data t
 
 We used **KMeans clustering** to classify each timestamp into one of several market regimes based on the engineered features.
 
-### Outputs:
-- 📄 `merged_with_regimes.csv`: Dataset with regime labels
-- 📊 `regime_summary.csv`: Summary of average feature values per regime
-- 📈 `regime_timeline.png`: Visualization of regime transitions over time
+📂 Outputs
+📁 merged_with_regimes.csv
+👉 Annotated dataset containing original features along with their corresponding regime labels.
+📍 Path:
+C:\Users\vaibh\OneDrive\Documents\GitHub\regime-detection\outputs\clusters\merged_with_regimes.csv
+
+📁 regime_summary.csv
+👉 Summary table showing the average value of each feature for every detected regime.
+📍 Path:
+C:\Users\vaibh\OneDrive\Documents\GitHub\regime-detection\outputs\clusters\regime_summary.csv
+
+🖼️ regime_timeline.png
+👉 Visual timeline illustrating regime transitions over time, useful for identifying when shifts occurred.
+📍 Path:
+C:\Users\vaibh\OneDrive\Documents\GitHub\regime-detection\outputs\plots\regime_timeline.png
 
 ---
 
