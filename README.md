@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="https://your-image-url/banner.png" alt="Regime Detection Banner" />
+  <img src="assets/regime_detection_banner.png" alt="Regime Detection Banner" />
 </p>
+
 
 # 🧠 Regime Detection in Market Microstructure Data
 
@@ -104,6 +105,8 @@ We used **KMeans clustering** to classify each timestamp into one of multiple ma
 
 ```bash
 regime-detection/
+├── assets/
+│   ├── regime_detection_banner.png
 ├── data/
 │   ├── aggTrade/
 │   └── depth20_1000ms/
