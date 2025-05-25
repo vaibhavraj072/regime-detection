@@ -122,9 +122,8 @@ regime-detection/
 ├── regime_analysis.py
 ├── requirements.txt
 └── README.md
-
+```
 --
-
 ## 🛠️ How to Run the Project
 
 1. **Install the required Python packages**
