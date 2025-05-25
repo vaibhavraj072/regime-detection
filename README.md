@@ -48,6 +48,7 @@ We used **KMeans clustering** to classify each timestamp into one of several mar
 
 ### 📂 Outputs
 
+ ![Regime Timeline](outputs/plots/regime_timeline.png)
 - 📈 `regime_timeline.png`  
   - Visual timeline of detected regime transitions across the dataset.  
   - **Path:** `outputs/plots/regime_timeline.png`
