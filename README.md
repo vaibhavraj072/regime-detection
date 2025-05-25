@@ -1,82 +1,129 @@
+<p align="center">
+  <img src="https://your-image-url/banner.png" alt="Regime Detection Banner" />
+</p>
+
 # 🧠 Regime Detection in Market Microstructure Data
+
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+---
+
+## 📚 Table of Contents
+- [📝 Problem Statement](#-problem-statement)
+- [📘 Final Report](#-final-report)
+- [🧠 What is Regime Detection?](#-what-is-regime-detection)
+- [🔧 Features Engineered](#-features-engineered)
+- [🤖 Clustering and Output](#-clustering-and-output)
+- [📊 Results Snapshot](#-results-snapshot)
+- [📁 Folder Structure](#-folder-structure)
+- [🛠️ How to Run the Project](#-how-to-run-the-project)
+- [🧰 Tech Stack](#-tech-stack)
+- [✅ Project Milestones](#-project-milestones)
+- [🙋 About the Author](#-about-the-author)
+
+---
+
 ## 📝 Problem Statement
 
-This project is based on a real-world task provided by a company. The objective is to analyze order book and trade data, engineer meaningful features, and apply clustering to detect **market regimes**.
+This project is based on a real-world task provided by a company.  
+The objective is to analyze high-frequency order book and trade data, engineer meaningful features, and apply **unsupervised learning** to detect **market regimes**.
 
-📄 **Task Document Provided by @RozReturns**  
+📄 **Task Document by @RozReturns**  
 🔗 [View the official task description](https://docs.google.com/document/d/1SXLmYQtJEIFHq3ULb2Qejl5in0U9ZwQBFQdXD6RqpX8/edit?tab=t.0)
 
-📦 **Dataset for the Task**  
+📦 **Dataset**  
 🔗 [Access the Dataset (Google Drive)](https://drive.google.com/drive/folders/1gFLwPLTE0nUN-MHoOn5u_1yrlbpI3Fst?usp=sharing)
 
 ---
 
-## 📄 Final Report  
-**Authored by:** Vaibhav Raj  
-📘 [Click to read the final report](https://docs.google.com/document/d/1qLmr22UbpWiM6WHchLKa2RddSxvw8RUZu5mbb1eTDKk/edit?usp=sharing)
+## 📘 Final Report  
 
+**Authored by:** Vaibhav Raj  
+📝 [Read the Final Report](https://docs.google.com/document/d/1qLmr22UbpWiM6WHchLKa2RddSxvw8RUZu5mbb1eTDKk/edit?usp=sharing)
 
 ---
 
 ## 🧠 What is Regime Detection?
 
-In simple terms, a **regime** refers to a distinct type of market behavior.  
-Examples include:
-- Calm vs. volatile periods
-- Buy-dominant vs. sell-dominant markets
-- Stable vs. rapidly changing prices
+In financial markets, a **regime** refers to a specific state or behavior of the market, such as:
 
-We identify regimes using **unsupervised learning (KMeans Clustering)** on carefully engineered features.
+- Calm vs. Volatile periods  
+- Buy-Dominant vs. Sell-Dominant activity  
+- Stable vs. Highly Fluctuating Prices  
+
+We detect such regimes using **KMeans clustering** over a set of carefully engineered features extracted from order book and trade data.
 
 ---
 
 ## 🔧 Features Engineered
 
-We processed high-frequency order book (`depth20`) and trade (`aggTrade`) data to compute:
+We computed several key features from order book (`depth20`) and trade (`aggTrade`) data:
 
-- `spread`: Difference between best ask and best bid
-- `imbalance`: Buy/sell pressure in the order book
-- `microprice`: Weighted average of bid and ask
-- `volatility`: Price fluctuation over time
-- `volume_imbalance`: Rolling difference between buy and sell volume
+- 📉 **Spread**: Best ask - best bid  
+- ⚖️ **Imbalance**: Buy vs. sell pressure  
+- 🧮 **Microprice**: Weighted average of best bid and ask  
+- 📊 **Volatility**: Price fluctuation over rolling windows  
+- 🔁 **Volume Imbalance**: Buy vs. sell volume over time  
 
 ---
 
 ## 🤖 Clustering and Output
 
-We used **KMeans clustering** to classify each timestamp into one of several market regimes based on the engineered features.
+We used **KMeans clustering** to classify each timestamp into one of multiple market regimes based on the above features.
 
-### Outputs:
-- 📄 `merged_with_regimes.csv`: Dataset with regime labels
-- 📊 `regime_summary.csv`: Summary of average feature values per regime
-- 📈 `regime_timeline.png`: Visualization of regime transitions over time
+### 📂 Key Outputs:
+
+- 📈 `regime_timeline.png`: Visualizes regime shifts over time  
+  <p align="center">
+    <img src="outputs/plots/regime_timeline.png" alt="Regime Timeline" width="700"/>
+  </p>
+
+- 📄 `merged_with_regimes.csv`: Feature-rich dataset with regime labels  
+  - 📍 `outputs/clusters/merged_with_regimes.csv`
+
+- 📄 `regime_summary.csv`: Feature-wise averages for each regime  
+  - 📍 `outputs/clusters/regime_summary.csv`
+
+---
+
+## 📊 Results Snapshot
+
+| Regime | Avg Spread | Avg Imbalance | Avg Volatility |
+|--------|------------|----------------|----------------|
+|   0    |   0.23     |     -0.12      |    0.0045      |
+|   1    |   0.17     |      0.08      |    0.0023      |
+|   2    |   0.12     |     -0.05      |    0.0017      |
+
+*(Sample metrics for demonstration)*
 
 ---
 
 ## 📁 Folder Structure
 
-- regime-detection/
-- ├── data/
-- │   ├── aggTrade/
-- │   └── depth20_1000ms/
-- ├── outputs/
-- │   ├── clusters/
-- │   │   ├── merged_with_regimes.csv
-- │   │   └── regime_summary.csv
-- │   └── plots/
-- │       └── regime_timeline.png
-- ├── src/
-- │   ├── load_data.py
-- │   ├── feature_engineering.py
-- │   ├── clustering.py
-- │   └── visualization.py
-- ├── main.py
-- ├──regime_analysis.py
-- └── README.md
-
-  
+```bash
+regime-detection/
+├── data/
+│   ├── aggTrade/
+│   └── depth20_1000ms/
+├── outputs/
+│   ├── clusters/
+│   │   ├── merged_with_regimes.csv
+│   │   └── regime_summary.csv
+│   └── plots/
+│       └── regime_timeline.png
+├── src/
+│   ├── load_data.py
+│   ├── feature_engineering.py
+│   ├── clustering.py
+│   └── visualization.py
+├── main.py
+├── regime_analysis.py
+├── requirements.txt
+└── README.md
+```
 ---
-
 ## 🛠️ How to Run the Project
 
 1. **Install the required Python packages**
@@ -109,3 +156,4 @@ We used **KMeans clustering** to classify each timestamp into one of several mar
 - Vaibhav Raj
 - A Computer Science student with a passion for quantitative analysis, trading systems, and AI.
 - [Visit my Portfolio](https://vaibhavrajportfolio.vercel.app)
+- [🔗 LinkedIn](https://www.linkedin.com/in/vaibhav-raj-08794b270/)
