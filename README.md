@@ -122,3 +122,39 @@ regime-detection/
 ├── regime_analysis.py
 ├── requirements.txt
 └── README.md
+
+--
+
+## 🛠️ How to Run the Project
+
+1. **Install the required Python packages**
+   ```bash
+   pip install -r requirements.txt
+
+2.Run the main script
+     
+     python main.py
+     python regime_analysis.py
+
+
+3.Check the outputs/ folder for results:
+
+- 📁 Clustered CSVs: outputs/clusters/
+- 🖼️ Regime timeline plot: outputs/plots/
+
+---
+
+## ✅ Project Milestones
+-  Load & preprocess order book and trade data
+-  Engineer key features like spread, imbalance, and volatility
+-  Apply clustering to detect market regimes
+-  Visualize timeline of market behavior shifts
+-  Generate a full report and summaries
+
+---
+
+## 🙋 About the Author
+- Vaibhav Raj
+- A Computer Science student with a passion for quantitative analysis, trading systems, and AI.
+- [Visit my Portfolio](https://vaibhavrajportfolio.vercel.app)
+-- [🔗 LinkedIn](https://www.linkedin.com/in/vaibhav-raj-08794b270/)
