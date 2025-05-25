@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="assets/regime_detection_banner.png" alt="Regime Detection Banner" />
+  <img src="assets/Regime%20Detection%20Banner.png" alt="Regime Detection Banner" />
 </p>
+
 
 
 # 🧠 Regime Detection in Market Microstructure Data
