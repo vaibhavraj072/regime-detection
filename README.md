@@ -156,4 +156,4 @@ regime-detection/
 - Vaibhav Raj
 - A Computer Science student with a passion for quantitative analysis, trading systems, and AI.
 - [Visit my Portfolio](https://vaibhavrajportfolio.vercel.app)
--- [🔗 LinkedIn](https://www.linkedin.com/in/vaibhav-raj-08794b270/)
+- [🔗 LinkedIn](https://www.linkedin.com/in/vaibhav-raj-08794b270/)
